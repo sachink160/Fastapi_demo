@@ -23,3 +23,8 @@ app = FastAPI()
 def read_root():
     app_logger.info('Root endpoint accessed')
     return {"message": "Hello, FastAPI with logging!"} 
+
+@app.get('/hellow/')
+def Helow():
+    app_logger.info('hellow endpoint this rout')
+    return {"message": "Hello world, FastAPI with logging!"} 
